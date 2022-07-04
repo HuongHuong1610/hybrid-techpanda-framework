@@ -5,12 +5,6 @@
           name="F:/hybrid-techpanda-framework/src/main/java/testcases/techpanda/account/Account_01_Register.java">
         <classes>
             <class name="testcases.techpanda.account.Account_01_Register">
-                <methods>
-                    <include name="Register_01_Empty_Data"/>
-                    <include name="Register_02_Invalid_Email"/>
-                    <include name="Register_03_Invalid_Password"/>
-                    <include name="afterClass"/>
-                </methods>
             </class>
         </classes>
     </test>
