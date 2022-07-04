@@ -1,4 +1,4 @@
-package actions.common;
+package cores.common;
 
 public enum EnviromentList {
 }

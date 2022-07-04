@@ -1,4 +1,4 @@
-package actions.reportConfig;
+package cores.reportConfig;
 
 public class ReportNGListener {
 }

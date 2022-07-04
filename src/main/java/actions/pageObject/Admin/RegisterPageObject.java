@@ -1,4 +1,4 @@
-package actions.pageObject;
+package actions.pageObject.Admin;
 
 public class RegisterPageObject {
 }
