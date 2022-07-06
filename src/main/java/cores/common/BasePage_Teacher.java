@@ -7,22 +7,21 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 
-import java.sql.Driver;
 import java.util.List;
 import java.util.Set;
 
-public class BasePage {
+public class BasePage_Teacher {
     /* Web browser*/
     // Note:
     //1 . Tham so bat buoc cua 1 ham tuong tac voi Web Browser la Webdriver
 
     /**
      * Open any page Url
-     * @author huong.vt
-     * @param driver
+     *
      * @param pageURL
-     * */
-    public void openPageUrl(WebDriver driver, String pageURL) {
+     * @author huong.vt
+     */
+    public void openPageUrl(WebDriver driver,String pageURL) {
         driver.get(pageURL);
     }
     /**

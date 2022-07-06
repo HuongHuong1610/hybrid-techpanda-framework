@@ -1,7 +1,6 @@
 package cores.common;
 
 import org.openqa.selenium.*;
-import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.Color;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -15,10 +14,9 @@ public class BasePage_Executor {
     /**
      * Open url
      *
-     * @param driver
      * @param url
      */
-    public void openPageUrl(WebDriver driver, String url) {
+    public void openPageUrl(WebDriver driver , String url) {
         driver.get(url);
     }
 
@@ -217,8 +215,8 @@ public class BasePage_Executor {
      * @param driver
      * @param locator
      */
-    public void waitForElementVisible(WebDriver driver, String locator) {
-        new WebDriverWait(driver, timeOutlnSeconds).until(ExpectedConditions.visibilityOf(getWebElement(driver, locator)));
+    public WebElement waitForElementVisible(WebDriver driver, String locator) {
+        return new WebDriverWait(driver, timeOutlnSeconds).until(ExpectedConditions.visibilityOf(getWebElement(driver, locator)));
     }
 
     /**
@@ -294,6 +292,7 @@ public class BasePage_Executor {
      * @param dataValue
      */
     public void sendKeyToElement(WebDriver driver, String locator, String dataValue) {
+        waitForElementVisible(driver,locator);
         WebElement element = getWebElement(driver, locator);
         element.clear();
         element.sendKeys(dataValue);
