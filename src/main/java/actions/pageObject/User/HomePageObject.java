@@ -11,7 +11,6 @@ public class HomePageObject extends cores.common.BasePage_Executor {
     }
 
     public void clickToMyAccountLink() {
-        waitForElementClickable(driver, HomePageUI.MY_ACCOUNT_LINK);
-        getWebElement(driver, HomePageUI.MY_ACCOUNT_LINK).click();
+        waitForElementClickable(driver, HomePageUI.MY_ACCOUNT_LINK).click();
     }
 }

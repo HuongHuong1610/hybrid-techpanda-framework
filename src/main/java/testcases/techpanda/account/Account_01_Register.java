@@ -85,10 +85,10 @@ public class Account_01_Register {
         assertTrue(driver.findElement(By.xpath("//h3[text()='Contact Information']/parent::div/following-sibling::div[@class='box-content']/p[contains(.,'automationfc.vn@gmail.com')]")).isDisplayed());
     }
 
-    @AfterClass
-    public void afterClass() {
-        driver.quit();
-    }
+        @AfterClass
+        public void afterClass() {
+            driver.quit();
+        }
 
     private int randomNumber() {
         Random rand = new Random();

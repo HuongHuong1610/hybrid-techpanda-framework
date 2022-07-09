@@ -32,7 +32,6 @@ public class Level_04_Multiple_Browser_Teacher_Part_I extends cores.common.BaseT
     @Parameters({"browser"})
     @BeforeClass
     public void beforeClass(String browserName) {
-
         driver = getBrowserDriver(browserName);
         homePageObject = new HomePageObject(driver);
         loginPageObject = new LoginPageObject(driver);
