@@ -1,6 +1,6 @@
 package actions.pageObject.User;
 
-import interfaces.pageUIs.User.LoginPageUI;
+import interfaces.pageUIs.User.MyDashBoardPageUI;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
@@ -10,10 +10,10 @@ public class MyDashBoardPageObject extends cores.common.BasePage_Executor{
         this.driver =driver;
     }
     public WebElement getContactInformationByUserName() {
-        return waitForElementVisible(driver, LoginPageUI.CONTACT_INFORMATION_BY_USERNAME);
+        return waitForElementVisible(driver, MyDashBoardPageUI.CONTACT_INFORMATION_BY_USERNAME);
     }
 
     public WebElement getContactInformationByEmail() {
-        return waitForElementVisible(driver,LoginPageUI.CONTACT_INFORMATION_BY_EMAIL);
+        return waitForElementVisible(driver,MyDashBoardPageUI.CONTACT_INFORMATION_BY_EMAIL);
     }
 }

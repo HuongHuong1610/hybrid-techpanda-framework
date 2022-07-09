@@ -1,6 +1,7 @@
 package actions.pageObject.User;
 
 import interfaces.pageUIs.User.HomePageUI;
+import interfaces.pageUIs.User.LoginPageUI;
 import org.openqa.selenium.WebDriver;
 
 public class HomePageObject extends cores.common.BasePage_Executor {
@@ -10,7 +11,9 @@ public class HomePageObject extends cores.common.BasePage_Executor {
         this.driver = driver;
     }
 
-    public void clickToMyAccountLink() {
-        waitForElementClickable(driver, HomePageUI.MY_ACCOUNT_LINK).click();
+    public LoginPageObject clickToMyAccountLink() {
+        waitForElementClickable(driver, HomePageUI.MY_ACCOUNT_LINK);
+        getWebElement(driver,HomePageUI.MY_ACCOUNT_LINK).click();
+        return PageGeneratorManager.getLoginPage(driver);
     }
 }

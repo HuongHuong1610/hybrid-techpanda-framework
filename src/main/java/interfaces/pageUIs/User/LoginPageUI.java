@@ -9,9 +9,5 @@ public class LoginPageUI {
     public static final String EMAIL_ADDRESS_INVALID_ERROR_MESSAGE= "//div[@id='advice-validate-email-email']";
     public static final String PASSWORD_INVALID_ERROR_MESSAGE= "//div[@id='advice-validate-password-pass']";
     public static final String EMAIL_PASSWORD_INCORRECT_ERROR_MESSAGE= "//li[@class='error-msg']//span";
-    public static final String CONTACT_INFORMATION_BY_USERNAME = "//h3[text()='Contact Information']/parent::div/following-sibling::div[@class='box-content']/p[contains(.,'Automation FC')]";
-    public static final String CONTACT_INFORMATION_BY_EMAIL = "//h3[text()='Contact Information']/parent::div/following-sibling::div[@class='box-content']/p[contains(.,'automationfc.vn@gmail.com')]";
-
-
 
 }

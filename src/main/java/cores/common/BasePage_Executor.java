@@ -226,8 +226,8 @@ public class BasePage_Executor {
      * @param locator
      */
 
-    public WebElement waitForElementClickable(WebDriver driver, String locator) {
-        return new WebDriverWait(driver, timeOutlnSeconds).until(ExpectedConditions.elementToBeClickable(getWebElement(driver,locator)));
+    public void waitForElementClickable(WebDriver driver, String locator) {
+         new WebDriverWait(driver, timeOutlnSeconds).until(ExpectedConditions.elementToBeClickable(getLocatorByXpath(locator)));
     }
 
     /**
@@ -257,7 +257,7 @@ public class BasePage_Executor {
      * @param locator
      */
     public void clickToElement(WebDriver driver, String locator) {
-        waitForElementClickable(driver,locator).click();
+                getWebElement(driver,locator).click();
     }
 
     /**

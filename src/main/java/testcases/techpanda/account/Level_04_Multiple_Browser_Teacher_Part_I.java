@@ -33,6 +33,7 @@ public class Level_04_Multiple_Browser_Teacher_Part_I extends cores.common.BaseT
     @BeforeClass
     public void beforeClass(String browserName) {
         driver = getBrowserDriver(browserName);
+        driver.get("http://live.techpanda.org/");
         homePageObject = new HomePageObject(driver);
         loginPageObject = new LoginPageObject(driver);
 
